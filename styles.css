@@ -1,0 +1,417 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Container */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Countdown Section */
+.countdown {
+    background-color: #ff6f61;
+    padding: 60px 20px;
+    color: white;
+    text-align: center;
+}
+
+.countdown h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.timer {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    color: #ff6f61;
+    border-radius: 10px;
+    display: inline-block;
+    animation: pulse 1.5s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #ff6f61;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #ff9a8b;
+}
+
+/* Header Section */
+header {
+    background: linear-gradient(to right, #ff9a8b, #ff6f61);
+    padding: 80px 20px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Smooth Scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Video Section */
+.video-section {
+    padding: 60px 20px;
+    background-color: #ff9a8b;
+    color: white;
+    text-align: center;
+}
+
+.video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.video-section p {
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.video-container {
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.video-frame {
+    width: 100%;
+    height: 400px;
+}
+
+/* Couple Section */
+.couple-section {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.couple-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.couple-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.groom, .bride {
+    width: 250px;
+    text-align: center;
+}
+
+.groom img, .bride img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.groom h3, .bride h3 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+}
+
+/* Jadwal Acara Section */
+.jadwal-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.jadwal-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #ff6f61;
+}
+
+.jadwal-section ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 0;
+}
+
+.jadwal-section ul li {
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.jadwal-section ul li:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.jadwal-section ul li h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.jadwal-section ul li p {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+.jadwal-section ul li::before {
+    content: "⏰";
+    margin-right: 10px;
+    color: #ff6f61;
+}
+
+/* Gallery Section */
+.gallery-section {
+    padding: 60px 20px;
+    background-color: #ff9a8b;
+    color: white;
+    text-align: center;
+}
+
+.gallery-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.gallery img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Comments Section */
+.komentar-section {
+    padding: 60px 20px;
+    background-color: #ff9a8b;
+    color: white;
+    text-align: center;
+}
+
+.komentar-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+.komentar-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.komentar-section input, .komentar-section textarea {
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ff6f61;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.komentar-section input:focus, .komentar-section textarea:focus {
+    outline: none;
+    border-color: #ff9a8b;
+    box-shadow: 0 0 10px rgba(255, 154, 139, 0.6);
+}
+
+.komentar-section button {
+    background-color: #ff6f61;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 1rem;
+}
+
+.komentar-section button:hover {
+    background-color: #ff9a8b;
+}
+
+/* Styling for the comments after submission */
+.komentar-list {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.komentar-list .komentar-item {
+    background-color: white;
+    color: #333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.komentar-list .komentar-item .komentar-name {
+    font-weight: bold;
+    color: #ff6f61;
+    margin-bottom: 8px;
+}
+
+.komentar-list .komentar-item .komentar-message {
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #555;
+}
+
+.komentar-list .komentar-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Optional: Adding a cool background effect */
+.komentar-section .komentar-item {
+    animation: fadeIn 1s ease-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Rekening Kami Section */
+.rekening-section {
+    padding: 60px 20px;
+    background-color: #ffffff;
+    color: #333;
+    text-align: center;
+}
+
+.rekening-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.rekening-details {
+    font-size: 1.2rem;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.rekening-details p {
+    margin-bottom: 10px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Menambahkan pengaturan audio */
+audio {
+    display: none; /* Menyembunyikan audio player */
+}
+
+/* Menampilkan audio player dengan kontrol */
+audio {
+    width: 100%;
+    margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .jadwal-section ul {
+        grid-template-columns: 1fr;
+    }
+}
